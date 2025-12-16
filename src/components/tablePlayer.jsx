@@ -3,13 +3,11 @@ import { useState } from "react";
 import { tampilPlayer } from "../services/tampil";
 
 export default function TablePlayer() {
-  const [player, setPlayer] = useState([])
+  const [player, setPlayer] = useState([]);
 
   useEffect(() => {
-    tampilPlayer()
-      .then(setPlayer)
-      .catch(console.error)
-  }, [])
+    tampilPlayer().then(setPlayer).catch(console.error);
+  }, []);
 
   return (
     <>
@@ -25,14 +23,20 @@ export default function TablePlayer() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td {player.map(a => (
-                <div key={a.id}>{a.teams}</div>
-              ))}>No</td>
-            </tr>
+            {player.map((a, index) => (
+              <tr key={a.id}>
+                <td>{index + 1}</td>
+                <td>
+                  <img src={a.photo} alt={a.name} width="50" />
+                </td>
+                <td>{a.name}</td>
+                <td>{a.position}</td>
+                <td>{a.teams}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
     </>
-  )
+  );
 }

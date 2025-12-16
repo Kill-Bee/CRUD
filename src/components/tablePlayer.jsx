@@ -44,6 +44,7 @@ export default function TablePlayer() {
               ))}
             </tbody>
           </table>
+          <button className="btn btn-secondary" ><a href="insertPlayer.jsx" className="text-light">Add More 🔄️</a></button>
         </div>
       </div>
     </>

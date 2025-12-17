@@ -1,13 +1,16 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { tampilPlayer } from "../services/tampil";
+import { tampilPlayer } from "../services/service";
 
 export default function EditPlayer({ onBackClick, onEditClick }) {
   const [player, setPlayer] = useState([]);
 
   useEffect(() => {
-    tampilPlayer().then(setPlayer).catch(console.error);
+    tampilPlayer()
+      .then(setPlayer)
+      .catch(console.error);
   }, []);
+
   return (
     <>
       <div className="container">

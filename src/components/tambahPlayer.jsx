@@ -1,38 +1,55 @@
-import { useEffect } from "react";
 import { useState } from "react";
-import { tampilPlayer } from "../services/tampil";
+import { tambahPlayer } from "../services/service";
 
-export default function InsertPlayer({ onBackClick }) {
-  const [player, setPlayer] = useState([]);
+export default function InsertPlayer({ onBackClick, onSuccess }) {
+  const [form, setForm] = useState({
+    name: "",
+    position: "",
+    teams: "",
+    photo: "",
+  })
 
-  useEffect(() => {
-    tampilPlayer().then(setPlayer).catch(console.error);
-  }, []);
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    await tambahPlayer();
+    onSuccess();
+  }
+
   return (
     <>
       <div className="container">
         <div className="card p-4 mt-5">
-          <h2>Insert Player</h2>
+          <h2 className="mb-3">Insert Player</h2>
 
+          {/* input name */}
           <div className="input-group mb-3">
             <input
+              name="name"
               type="text"
               className="form-control"
-              placeholder="Username"
+              placeholder="Insert name"
               aria-label="Username"
               aria-describedby="basic-addon1"
+              onChange={handleChange}
             />
           </div>
 
+          {/* input photo */}
           <div className="input-group mb-3">
-            <input type="file" className="form-control" id="inputGroupFile02" />
+            <input type="file" className="form-control" id="inputGroupFile02" name="photo" onChange={handleChange} />
             <label className="input-group-text" htmlFor="inputGroupFile02">
               Photos
             </label>
           </div>
 
-            <div className="input-group mb-3">
-            <select className="form-select" id="inputGroupSelect02" defaultValue="">
+          {/* input position */}
+          <div className="input-group mb-3">
+            <select className="form-select" id="inputGroupSelect02" defaultValue="" name="position" onChange={handleChange}>
               <option value="" disabled>Your Position</option>
               <option value="1">Point Guard (PG)</option>
               <option value="2">Shooting Guard (SG)</option>
@@ -45,9 +62,9 @@ export default function InsertPlayer({ onBackClick }) {
             </label>
           </div>
 
-
+          {/* input teams */}
           <div className="input-group mb-3">
-            <select className="form-select" id="inputGroupSelect02" defaultValue="">
+            <select className="form-select" id="inputGroupSelect02" defaultValue="" name="teams" onChange={handleChange}>
               <option value="" disabled>Your Teams</option>
               <option value="1">Boston Celtics</option>
               <option value="2">Los Angeles Lakers</option>
@@ -62,11 +79,11 @@ export default function InsertPlayer({ onBackClick }) {
             </label>
           </div>
 
-         
-
-          <button className="btn btn-secondary px-2" onClick={onBackClick}>
-            Send ⬅️
-          </button>
+          {/* button send & back */}
+          <div className="row">
+            <button type="submit" className="btn btn-danger px-2" onSubmit={handleSubmit}>Send</button>
+            <button type="button" className="btn btn-primary px-2" onClick={onBackClick}>Back</button>
+          </div>
         </div>
       </div>
     </>

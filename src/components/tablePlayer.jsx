@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { tampilPlayer } from "../services/tampil";
 
-export default function TablePlayer() {
+export default function TablePlayer({ onAddClick }) {
   const [player, setPlayer] = useState([]);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function TablePlayer() {
               ))}
             </tbody>
           </table>
-          <button className="btn btn-secondary" ><a href="insertPlayer.jsx" className="text-light">Add More 🔄️</a></button>
+          <button className="btn btn-secondary" onClick={onAddClick}>Add More 🔄️</button>
         </div>
       </div>
     </>

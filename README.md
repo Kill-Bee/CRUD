@@ -1,16 +1,46 @@
-# React + Vite
+# NBA-Players-CRUD 🏀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![GitHub license](https://img.shields.io/github/license/Kill-Bee/NBA-Players-CRUD)
+![GitHub repo size](https://img.shields.io/github/repo-size/Kill-Bee/NBA-Players-CRUD)
+![GitHub last commit](https://img.shields.io/github/last-commit/Kill-Bee/NBA-Players-CRUD)
 
-Currently, two official plugins are available:
+## 📝 Ringkasan Proyek
+**NBA-Players-CRUD** adalah aplikasi berbasis web sederhana yang dirancang untuk mengelola data pemain NBA. Proyek ini merupakan implementasi dari operasi dasar database yang dikenal sebagai **CRUD** (*Create, Read, Update, Delete*). Dengan aplikasi ini, pengguna dapat mencatat daftar pemain, memperbarui statistik atau informasi mereka, serta menghapus data yang sudah tidak relevan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
+* **Create**: Menambahkan data pemain baru (Nama, Tim, Posisi, dll).
+* **Read**: Menampilkan daftar lengkap pemain NBA yang tersimpan di database.
+* **Update**: Mengubah informasi detail pemain yang sudah ada.
+* **Delete**: Menghapus data pemain dari sistem.
+* **Responsive Design**: Antarmuka yang ramah pengguna dan dapat diakses melalui berbagai perangkat.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Contoh Penggunaan
+Menambah Data: Klik tombol "Tambah Pemain", isi form dengan nama pemain seperti LeBron James dan tim LA Lakers, lalu simpan.
 
-## Expanding the ESLint configuration
+Melihat Data: Daftar pemain akan muncul secara otomatis di tabel halaman utama.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Mengubah Data: Klik ikon pensil/tombol edit pada baris pemain yang ingin diubah datanya.
+
+Menghapus Data: Klik tombol hapus dan konfirmasi untuk menghilangkan data dari database.
+
+## 🧠 Filosofi Proyek
+"Fundamental adalah kunci."
+
+Sama seperti pemain NBA yang harus menguasai teknik dasar basket (dribble, shooting, passing) sebelum melakukan Slam Dunk, proyek ini menekankan pentingnya memahami alur dasar pengelolaan data (CRUD) sebelum melangkah ke framework yang lebih kompleks. Kesederhanaan adalah bentuk kecanggihan tertinggi.
+
+## 🤝 Kontribusi
+Kontribusi selalu terbuka untuk siapa saja! Jika Anda memiliki saran fitur atau menemukan bug:
+
+1. Fork repositori ini.
+
+2. Buat branch fitur baru (git checkout -b fitur/FiturKeren).
+
+3. Commit perubahan Anda (git commit -m 'Menambahkan fitur keren').
+
+4. Push ke branch tersebut (git push origin fitur/FiturKeren).
+
+5. Buka Pull Request.
+
+## 📄 Lisensi
+Proyek ini dilisensikan di bawah MIT License. Lihat file LICENSE untuk informasi lebih lanjut.

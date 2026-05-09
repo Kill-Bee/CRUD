@@ -33,6 +33,3 @@ Contributions are always welcome! If you have feature suggestions or find bugs:
 3. Commit your changes (git commit -m 'Add some AmazingFeature').
 4. Push to the branch (git push origin feature/AmazingFeature).
 5. Open a Pull Request.
-
-## 📄 License
-This project is licensed under the MIT License. See the LICENSE file for more information.

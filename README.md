@@ -4,43 +4,35 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Kill-Bee/NBA-Players-CRUD)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Kill-Bee/NBA-Players-CRUD)
 
-## 📝 Ringkasan Proyek
-**NBA-Players-CRUD** adalah aplikasi berbasis web sederhana yang dirancang untuk mengelola data pemain NBA. Proyek ini merupakan implementasi dari operasi dasar database yang dikenal sebagai **CRUD** (*Create, Read, Update, Delete*). Dengan aplikasi ini, pengguna dapat mencatat daftar pemain, memperbarui statistik atau informasi mereka, serta menghapus data yang sudah tidak relevan.
+## 📝 Project Summary
+**NBA-Players-CRUD** is a web-based application designed to manage NBA player data. This project implements essential database operations known as **CRUD**:
 
-## ✨ Fitur Utama
-* **Create**: Menambahkan data pemain baru (Nama, Tim, Posisi, dll).
-* **Read**: Menampilkan daftar lengkap pemain NBA yang tersimpan di database.
-* **Update**: Mengubah informasi detail pemain yang sudah ada.
-* **Delete**: Menghapus data pemain dari sistem.
-* **Responsive Design**: Antarmuka yang ramah pengguna dan dapat diakses melalui berbagai perangkat.
+* **Create**: Add new player data (Name, Team, Position, etc.).
+* **Read**: View a complete list of NBA players stored in the database.
+* **Update**: Modify the information of existing players.
+* **Delete**: Remove player data from the system.
+* **Responsive Design**: User-friendly interface accessible across various devices.
 
+## 🚀 Usage Examples
 
-## 🚀 Contoh Penggunaan
-Menambah Data: Klik tombol "Tambah Pemain", isi form dengan nama pemain seperti LeBron James dan tim LA Lakers, lalu simpan.
+* **Add Data**: Click the "Add Player" button, complete the form with player details like LeBron James and Team LA Lakers, then save.
+* **View Data**: The list of players automatically appears in the table on the home page.
+* **Edit Data**: Click the pencil icon or edit button on the row of the player you want to update.
+* **Delete Data**: Click the delete button and confirm to remove the players data from the system.
 
-Melihat Data: Daftar pemain akan muncul secara otomatis di tabel halaman utama.
+## 🧠 Project Philosophy
+"Fundamentals are key."
 
-Mengubah Data: Klik ikon pensil/tombol edit pada baris pemain yang ingin diubah datanya.
+Just as NBA players need to master basic basketball techniques (dribbling, shooting, passing) before performing slam dunks, this project emphasizes the importance of understanding basic data management workflows (CRUD).
 
-Menghapus Data: Klik tombol hapus dan konfirmasi untuk menghilangkan data dari database.
+## 🤝 Contributions
+Contributions are always welcome! If you have feature suggestions or find bugs:
 
-## 🧠 Filosofi Proyek
-"Fundamental adalah kunci."
+1. Fork this repository.
+2. Create a new branch (git checkout -b feature/AmazingFeature).
+3. Commit your changes (git commit -m 'Add some AmazingFeature').
+4. Push to the branch (git push origin feature/AmazingFeature).
+5. Open a Pull Request.
 
-Sama seperti pemain NBA yang harus menguasai teknik dasar basket (dribble, shooting, passing) sebelum melakukan Slam Dunk, proyek ini menekankan pentingnya memahami alur dasar pengelolaan data (CRUD) sebelum melangkah ke framework yang lebih kompleks. Kesederhanaan adalah bentuk kecanggihan tertinggi.
-
-## 🤝 Kontribusi
-Kontribusi selalu terbuka untuk siapa saja! Jika Anda memiliki saran fitur atau menemukan bug:
-
-1. Fork repositori ini.
-
-2. Buat branch fitur baru (git checkout -b fitur/FiturKeren).
-
-3. Commit perubahan Anda (git commit -m 'Menambahkan fitur keren').
-
-4. Push ke branch tersebut (git push origin fitur/FiturKeren).
-
-5. Buka Pull Request.
-
-## 📄 Lisensi
-Proyek ini dilisensikan di bawah MIT License. Lihat file LICENSE untuk informasi lebih lanjut.
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for more information.
